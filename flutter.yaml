@@ -1,0 +1,13 @@
+# flutter.yaml
+deploy:
+  # 设置部署目标为 `gh-pages` 分支上的 GitHub Pages
+  provider: pages
+  skip_cleanup: true
+  # docs 目录下的文件将被部署
+  local_dir: docs
+  # 发布到 master 分支上
+  target_branch: main
+  # 指定生成的 index.html 文件为主页
+  # 注意：只在根据路由导航的 web build 中起作用
+  # 不适用于没有路由表的单页面应用
+  site_root: /web/
